@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vigor - your whole day on one energy curve</title>
-<meta name="description" content="Vigor turns your Apple Watch health data into a 0 to 100 body-energy score and a full-day energy curve, computed entirely on your iPhone. Seven looks, morning readiness, day tags, watch app and widgets. Pay once, USD 2.99, no subscription.">
+<meta name="description" content="Vigor turns your Apple Watch health data into a 0 to 100 body-energy score and a full-day energy curve, computed entirely on your iPhone. Eight looks, morning readiness, day tags, watch app and widgets. Pay once, USD 2.99, no subscription.">
 <link rel="canonical" href="https://frozaccio.github.io/Vigor/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vigor">
 <meta property="og:title" content="Vigor - your whole day on one energy curve">
-<meta property="og:description" content="A 0 to 100 body-energy score and a full-day energy curve from your Apple Watch, computed entirely on your iPhone. Seven looks, watch app, widgets. Pay once, USD 2.99.">
+<meta property="og:description" content="A 0 to 100 body-energy score and a full-day energy curve from your Apple Watch, computed entirely on your iPhone. Eight looks, watch app, widgets. Pay once, USD 2.99.">
 <meta property="og:url" content="https://frozaccio.github.io/Vigor/">
 <meta property="og:image" content="https://frozaccio.github.io/Vigor/assets/og-card.jpg">
 <meta property="og:image:width" content="1200">
@@ -28,7 +28,7 @@
   "name": "Vigor",
   "operatingSystem": "iOS",
   "applicationCategory": "HealthApplication",
-  "description": "Vigor turns Apple Watch health data into a 0 to 100 body-energy score and a full-day energy curve, computed entirely on the iPhone. Seven visual themes, morning readiness score, day tags, Apple Watch app, complications, widgets, and an opt-in Circles feature to share your energy score with friends via iCloud. One-time purchase, no subscription; health data never leaves the device.",
+  "description": "Vigor turns Apple Watch health data into a 0 to 100 body-energy score and a full-day energy curve, computed entirely on the iPhone. Eight visual themes, morning readiness score, day tags, Apple Watch app, complications, widgets, and an opt-in Circles feature to share your energy score with friends via iCloud. One-time purchase, no subscription; health data never leaves the device.",
   "url": "https://frozaccio.github.io/Vigor/",
   "image": "https://frozaccio.github.io/Vigor/assets/og-card.jpg",
   "author": { "@type": "Person", "name": "Thomas Frosio" },
@@ -61,7 +61,9 @@
   h2{ font-size:clamp(26px,4.5vw,36px); letter-spacing:-.01em; margin:0 0 8px; }
   .lede{ color:var(--muted); max-width:680px; margin:0 0 28px; }
   .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
-  .card{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px; }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px; transition:transform .15s ease, box-shadow .15s ease; }
+  .card:hover{ transform:translateY(-2px); box-shadow:0 10px 26px rgba(0,0,0,.08); }
+  @media (prefers-reduced-motion:reduce){ .card{ transition:none; } .card:hover{ transform:none; } }
   .card h3{ margin:0 0 6px; font-size:18px; }
   .card p{ margin:0; color:var(--muted); font-size:15px; }
   .dot{ width:34px; height:34px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-weight:800; margin-bottom:10px; }
@@ -92,7 +94,7 @@
     <span class="badge grad">Pay once - USD 2.99. No subscription.</span>
     <!-- Paste the real App Store URL (https://apps.apple.com/app/idXXXXXXXXX) into href once the app is live. -->
     <a class="soon" href="#" aria-label="Download Vigor on the App Store">Download on the App Store</a>
-    <img class="hero-shot" src="assets/screenshots/hero.webp" alt="Vigor day view: the full-day energy curve with activity band and event markers" width="600" height="1304">
+    <img class="hero-shot" src="assets/screenshots/hero.webp" alt="Vigor day view: the full-day energy curve with activity band and event markers" width="640" height="1390">
     <p class="note">A wellness tool, not a medical device.</p>
   </div>
 </header>
@@ -102,16 +104,17 @@
     <h2>One clear picture of how much you have left</h2>
     <p class="lede">Vigor reads the health data your Apple Watch already records - heart rate variability, heart rate, resting heart rate, sleep and its stages, and workouts - and turns it into a single body-energy score from 0 to 100. The signature view is the day curve: your whole day drawn as one line that charges while you rest and drains while you push, with markers for sleep, workouts, and stress, so you can see at a glance whether to push hard or take it easy.</p>
     <div class="grid">
-      <div class="card"><div class="dot grad">1</div><h3>The day curve</h3><p>Your whole day as one line, with an activity band and tappable markers for sleep and workouts - plus an itemized log of every charge and drain.</p></div>
-      <div class="card"><div class="dot grad">2</div><h3>Morning readiness</h3><p>A 0 to 100 recovery score each morning, built from your heart rate variability, sleep, and resting heart rate - with clear green, yellow, and red zones.</p></div>
-      <div class="card"><div class="dot grad">3</div><h3>Sleep projection + outlook</h3><p>See what tonight's sleep gives back, get an optional evening outlook before bed, and a morning briefing when you wake.</p></div>
-      <div class="card"><div class="dot grad">4</div><h3>Day tags</h3><p>Tag alcohol, caffeine, sickness, or travel and the model adapts - so an off day reads as an off day, not a mystery.</p></div>
-      <div class="card"><div class="dot grad">5</div><h3>Tune it to your body</h3><p>Sensitivity presets (gentle, balanced, responsive), your own sleep need, a morning target, and your preferred gauge style.</p></div>
-      <div class="card"><div class="dot grad">6</div><h3>Seven looks</h3><p>Modern, Kawaii, OLED, Nature - plus new Neko (a chubby cat whose pose tracks your energy), Pixel (retro 8-bit), and Silk (elegant serif). Each with light and dark palettes; try them on with live previews.</p></div>
-      <div class="card"><div class="dot grad">7</div><h3>History + patterns</h3><p>30 days of history with a morning-start trend line, plus pattern insights: sleep versus morning start, workout-day effect, your best and worst weekday.</p></div>
-      <div class="card"><div class="dot grad">8</div><h3>Watch, widgets, sharing</h3><p>An Apple Watch app with complications and a wrist theme picker; Home Screen, Lock Screen, and StandBy widgets including a full-day-graph widget; a share card that carries your day curve.</p></div>
-      <div class="card"><div class="dot grad">9</div><h3>Circles - share your energy with friends</h3><p>Invite friends and see each other's energy at a glance - opt-in, via your own iCloud. Send a friendly nudge when someone runs low; only your name and score are shared, never your health data.</p></div>
-      <div class="card"><div class="dot grad">10</div><h3>Private by design</h3><p>All health processing happens on your device. No account, no Vigor server, no analytics - your health data never leaves your iPhone; the only thing you can choose to share is your energy score, through Circles.</p></div>
+      <div class="card"><div class="dot grad">1</div><h3>The day curve</h3><p>Your whole day as one line, with an activity band and tappable markers for sleep, naps, and workouts. Markers merge neatly when events coincide, and every charge and drain is itemized in a log.</p></div>
+      <div class="card"><div class="dot grad">2</div><h3>A battery that never resets</h3><p>Yesterday evening flows into this morning: the score is a running balance across days, so your night picks up exactly where your day left off - like a real battery.</p></div>
+      <div class="card"><div class="dot grad">3</div><h3>Morning readiness</h3><p>A 0 to 100 recovery score each morning, built from your heart rate variability, sleep, and resting heart rate - with clear green, yellow, and red zones.</p></div>
+      <div class="card"><div class="dot grad">4</div><h3>Sleep projection + outlook</h3><p>See what tonight's sleep gives back, get an optional evening outlook before bed, and a morning briefing when you wake.</p></div>
+      <div class="card"><div class="dot grad">5</div><h3>Day tags</h3><p>Tag alcohol, caffeine, sickness, or travel and the model adapts - so an off day reads as an off day, not a mystery.</p></div>
+      <div class="card"><div class="dot grad">6</div><h3>Tune it to your body</h3><p>Sensitivity presets (gentle, balanced, responsive), your own sleep need, a morning target, your preferred gauge style - and a light, dark, or follow-the-system appearance.</p></div>
+      <div class="card"><div class="dot grad">7</div><h3>Eight looks</h3><p>Modern, Kawaii, OLED, Nature, Neko (a chubby cat whose pose tracks your energy), Pixel (retro 8-bit), Silk (flowing fabric with a golden thread), and Formal (calm navy). Light and dark palettes; live previews.</p></div>
+      <div class="card"><div class="dot grad">8</div><h3>History + patterns</h3><p>30 days of history with a morning-start trend line and a battery-at-bedtime curve, plus pattern insights: sleep versus morning start, workout-day effect, your best and worst weekday.</p></div>
+      <div class="card"><div class="dot grad">9</div><h3>Watch, widgets, sharing</h3><p>An Apple Watch app with complications and a wrist theme picker; Home Screen, Lock Screen, and StandBy widgets including a full-day-graph widget; a share card that carries your day curve.</p></div>
+      <div class="card"><div class="dot grad">10</div><h3>Circles - share your energy with friends</h3><p>Invite friends and see each other's energy at a glance - opt-in, via your own iCloud. Send a friendly nudge when someone runs low; only your name and score are shared, never your health data.</p></div>
+      <div class="card"><div class="dot grad">11</div><h3>Private by design</h3><p>All health processing happens on your device. No account, no Vigor server, no analytics - your health data never leaves your iPhone; the only thing you can choose to share is your energy score, through Circles.</p></div>
     </div>
     <p class="note">Localized into 10 languages - and more to come after launch.</p>
   </div>
@@ -119,12 +122,13 @@
 
 <section>
   <div class="wrap">
-    <h2>Seven apps in one</h2>
-    <p class="lede">Every look has the same features - only the personality changes. Modern, Kawaii, OLED, Nature, Neko, Pixel, and Silk, each with light and dark palettes.</p>
+    <h2>Eight apps in one</h2>
+    <p class="lede">Every look has the same features - only the personality changes. Modern, Kawaii, OLED, Nature, Neko, Pixel, Silk, and Formal, each with light and dark palettes.</p>
     <div class="shots">
-      <figure><img src="assets/screenshots/modern.webp" alt="Modern theme with the energy gauge" width="640" height="1391" loading="lazy"><figcaption>Modern - one honest number, 0 to 100</figcaption></figure>
-      <figure><img src="assets/screenshots/neko.webp" alt="Neko theme with a cat whose pose tracks your energy" width="640" height="1391" loading="lazy"><figcaption>Neko - the cat's pose tracks your energy</figcaption></figure>
-      <figure><img src="assets/screenshots/oled.webp" alt="OLED theme in true black" width="640" height="1391" loading="lazy"><figcaption>OLED - true black, built for OLED</figcaption></figure>
+      <figure><img src="assets/screenshots/modern.webp" alt="Modern theme with the energy gauge" width="640" height="1390" loading="lazy"><figcaption>Modern - one honest number, 0 to 100</figcaption></figure>
+      <figure><img src="assets/screenshots/neko.webp" alt="Neko theme with a cat whose pose tracks your energy" width="640" height="1390" loading="lazy"><figcaption>Neko - the cat's pose tracks your energy</figcaption></figure>
+      <figure><img src="assets/screenshots/silk.webp" alt="Silk theme: flowing fabric filled to your energy level, with a golden thread" width="640" height="1390" loading="lazy"><figcaption>Silk - flowing fabric, filled to your level</figcaption></figure>
+      <figure><img src="assets/screenshots/oled.webp" alt="OLED theme in true black" width="640" height="1390" loading="lazy"><figcaption>OLED - true black, built for OLED</figcaption></figure>
     </div>
   </div>
 </section>
@@ -134,10 +138,10 @@
     <h2>See it in action</h2>
     <p class="lede">What charged and drained you, what tonight's sleep gives back, and the patterns behind your good and bad days.</p>
     <div class="shots">
-      <figure><img src="assets/screenshots/drivers.webp" alt="Itemized list of what charged and drained the score" width="640" height="1391" loading="lazy"><figcaption>What charged you, what drained you</figcaption></figure>
-      <figure><img src="assets/screenshots/projection.webp" alt="Sleep projection screen" width="640" height="1391" loading="lazy"><figcaption>See what tonight's sleep gives back</figcaption></figure>
-      <figure><img src="assets/screenshots/history.webp" alt="30-day history with trend line" width="640" height="1391" loading="lazy"><figcaption>30 days of history, with a trend line</figcaption></figure>
-      <figure><img src="assets/screenshots/insights.webp" alt="Pattern insights computed from your history" width="640" height="1391" loading="lazy"><figcaption>Know your patterns</figcaption></figure>
+      <figure><img src="assets/screenshots/drivers.webp" alt="Itemized list of what charged and drained the score" width="640" height="1390" loading="lazy"><figcaption>What charged you, what drained you</figcaption></figure>
+      <figure><img src="assets/screenshots/projection.webp" alt="Sleep projection screen" width="640" height="1390" loading="lazy"><figcaption>See what tonight's sleep gives back</figcaption></figure>
+      <figure><img src="assets/screenshots/history.webp" alt="30-day history with trend line" width="640" height="1390" loading="lazy"><figcaption>30 days of history, with a trend line</figcaption></figure>
+      <figure><img src="assets/screenshots/insights.webp" alt="Pattern insights computed from your history" width="640" height="1390" loading="lazy"><figcaption>Know your patterns</figcaption></figure>
     </div>
   </div>
 </section>
