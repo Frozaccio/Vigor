@@ -36,7 +36,7 @@
     "@type": "Offer",
     "price": "2.99",
     "priceCurrency": "USD",
-    "availability": "https://schema.org/PreOrder"
+    "availability": "https://schema.org/InStock"
   }
 }
 </script>
@@ -55,6 +55,8 @@
   .tagline{ font-size:clamp(18px,3.5vw,24px); color:var(--muted); margin:0 auto 20px; max-width:640px; }
   .badge{ display:inline-block; color:#fff; font-weight:700; font-size:14px; padding:8px 16px; border-radius:999px; }
   .soon{ display:inline-block; font-weight:700; font-size:14px; padding:8px 16px; border-radius:999px; border:1.5px solid var(--line); color:var(--muted); margin-left:8px; }
+  .cta{ display:inline-block; color:#fff; font-weight:700; font-size:16px; padding:13px 26px; border-radius:999px; text-decoration:none; box-shadow:0 10px 26px rgba(171,54,235,.30); }
+  .cta-wrap{ margin:20px 0 0; }
   .hero-shot{ width:min(300px,72vw); margin:34px auto 0; display:block; border-radius:36px; box-shadow:0 24px 60px rgba(0,0,0,.22); }
   .note{ color:var(--muted); font-size:14px; margin-top:14px; }
   section{ padding:48px 0; border-top:1px solid var(--line); }
@@ -92,8 +94,7 @@
     <h1>Vigor</h1>
     <p class="tagline">Your whole day on one energy curve - built from your Apple Watch, computed on your iPhone.</p>
     <span class="badge grad">Pay once - USD 2.99. No subscription.</span>
-    <!-- Paste the real App Store URL (https://apps.apple.com/app/idXXXXXXXXX) into href once the app is live. -->
-    <a class="soon" href="#" aria-label="Download Vigor on the App Store">Download on the App Store</a>
+    <p class="cta-wrap"><a class="cta grad" href="https://apps.apple.com/app/id6788975978" aria-label="Download Vigor on the App Store">Download on the App Store</a></p>
     <img class="hero-shot" src="assets/screenshots/hero.webp" alt="Vigor day view: the full-day energy curve with activity band and event markers" width="640" height="1390">
     <p class="note">A wellness tool, not a medical device.</p>
   </div>
