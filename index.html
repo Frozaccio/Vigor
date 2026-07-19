@@ -28,7 +28,7 @@
   "name": "Vigor",
   "operatingSystem": "iOS",
   "applicationCategory": "HealthApplication",
-  "description": "Vigor turns Apple Watch health data into a 0 to 100 body-energy score and a full-day energy curve, computed entirely on the iPhone. Eight visual themes, morning readiness score, day tags, Apple Watch app, complications, widgets, and an opt-in Circles feature to share your energy score with friends via iCloud. One-time purchase, no subscription; health data never leaves the device.",
+  "description": "Vigor turns Apple Watch health data into a 0 to 100 body-energy score and a full-day energy curve, computed entirely on the iPhone. Eight visual themes, morning readiness score, day tags, Apple Watch app, complications, widgets, and an opt-in Circles feature to share your energy score with friends via a join code or QR (over your own iCloud). One-time purchase, no subscription; health data never leaves the device.",
   "url": "https://frozaccio.github.io/Vigor/",
   "image": "https://frozaccio.github.io/Vigor/assets/og-card.jpg",
   "author": { "@type": "Person", "name": "Thomas Frosio" },
@@ -105,17 +105,19 @@
     <h2>One clear picture of how much you have left</h2>
     <p class="lede">Vigor reads the health data your Apple Watch already records - heart rate variability, heart rate, resting heart rate, sleep and its stages, and workouts - and turns it into a single body-energy score from 0 to 100. The signature view is the day curve: your whole day drawn as one line that charges while you rest and drains while you push, with markers for sleep, workouts, and stress, so you can see at a glance whether to push hard or take it easy.</p>
     <div class="grid">
-      <div class="card"><div class="dot grad">1</div><h3>The day curve</h3><p>Your whole day as one line, with an activity band and tappable markers for sleep, naps, and workouts. Markers merge neatly when events coincide, and every charge and drain is itemized in a log.</p></div>
+      <div class="card"><div class="dot grad">1</div><h3>The day curve</h3><p>Your whole day as one line, with an activity band and tappable markers for sleep, naps, and workouts. Tap any marker, or any row in the battery diary, to open its heart-rate zones or its sleep stages and cycles. Markers merge neatly when events coincide, and every charge and drain is itemized.</p></div>
       <div class="card"><div class="dot grad">2</div><h3>A battery that never resets</h3><p>Yesterday evening flows into this morning: the score is a running balance across days, so your night picks up exactly where your day left off - like a real battery.</p></div>
       <div class="card"><div class="dot grad">3</div><h3>Morning readiness</h3><p>A 0 to 100 recovery score each morning, built from your heart rate variability, sleep, and resting heart rate - with clear green, yellow, and red zones.</p></div>
-      <div class="card"><div class="dot grad">4</div><h3>Sleep projection + outlook</h3><p>See what tonight's sleep gives back, get an optional evening outlook before bed, and a morning briefing when you wake.</p></div>
-      <div class="card"><div class="dot grad">5</div><h3>Day tags</h3><p>Tag alcohol, caffeine, sickness, or travel and the model adapts - so an off day reads as an off day, not a mystery.</p></div>
-      <div class="card"><div class="dot grad">6</div><h3>Tune it to your body</h3><p>Sensitivity presets (gentle, balanced, responsive), your own sleep need, a morning target, your preferred gauge style - and a light, dark, or follow-the-system appearance.</p></div>
-      <div class="card"><div class="dot grad">7</div><h3>Eight looks</h3><p>Modern, Kawaii, OLED, Nature, Neko (a chubby cat whose pose tracks your energy), Pixel (retro 8-bit), Silk (flowing fabric with a golden thread), and Formal (calm navy). Light and dark palettes; live previews.</p></div>
-      <div class="card"><div class="dot grad">8</div><h3>History + patterns</h3><p>30 days of history with a morning-start trend line and a battery-at-bedtime curve, plus pattern insights: sleep versus morning start, workout-day effect, your best and worst weekday.</p></div>
-      <div class="card"><div class="dot grad">9</div><h3>Watch, widgets, sharing</h3><p>An Apple Watch app with complications and a wrist theme picker; Home Screen, Lock Screen, and StandBy widgets including a full-day-graph widget; a share card that carries your day curve.</p></div>
-      <div class="card"><div class="dot grad">10</div><h3>Circles - share your energy with friends</h3><p>Invite friends and see each other's energy at a glance - opt-in, via your own iCloud. Send a friendly nudge when someone runs low; only your name and score are shared, never your health data.</p></div>
-      <div class="card"><div class="dot grad">11</div><h3>Private by design</h3><p>All health processing happens on your device. No account, no Vigor server, no analytics - your health data never leaves your iPhone; the only thing you can choose to share is your energy score, through Circles.</p></div>
+      <div class="card"><div class="dot grad">4</div><h3>Training readiness and load</h3><p>A Training tab with a morning training-readiness score that blends your overnight recovery with your recent load; your long-term fitness against your recent fatigue, with a read on whether you are fresh, building, or overreaching, plus your VO2max trend; and your five heart-rate zones with how your sessions split across them.</p></div>
+      <div class="card"><div class="dot grad">5</div><h3>Cardio fitness and vitals</h3><p>A Body view with your cardio fitness (VO2max) and a fitness age, rated against people your age and sex; and your resting vitals - heart rate, HRV, breathing, blood oxygen, wrist temperature, walking and recovery heart rate - each with a 30-day trend you can scrub and a plain-language read.</p></div>
+      <div class="card"><div class="dot grad">6</div><h3>Sleep projection + outlook</h3><p>See what tonight's sleep gives back, get an optional evening outlook before bed, and a morning briefing when you wake.</p></div>
+      <div class="card"><div class="dot grad">7</div><h3>Day tags</h3><p>Tag alcohol, caffeine, sickness, or travel and the model adapts - so an off day reads as an off day, not a mystery.</p></div>
+      <div class="card"><div class="dot grad">8</div><h3>Tune it to your body</h3><p>Sensitivity presets (gentle, balanced, responsive), your own sleep need, a morning target, your preferred gauge style - and a light, dark, or follow-the-system appearance.</p></div>
+      <div class="card"><div class="dot grad">9</div><h3>Eight looks</h3><p>Modern, Kawaii, OLED, Nature, Neko (a chubby cat whose pose tracks your energy), Pixel (retro 8-bit), Silk (flowing fabric with a golden thread), and Formal (calm navy). Light and dark palettes; live previews.</p></div>
+      <div class="card"><div class="dot grad">10</div><h3>History + patterns</h3><p>30 days of history with a morning-start trend line and a battery-at-bedtime curve, plus pattern insights: sleep versus morning start, workout-day effect, your best and worst weekday.</p></div>
+      <div class="card"><div class="dot grad">11</div><h3>Watch, widgets, sharing</h3><p>An Apple Watch app - your score, day chart, and a morning-readiness page on the wrist - with complications and a theme picker; Home Screen, Lock Screen, and StandBy widgets including a full-day-graph widget; a share card that carries your day curve.</p></div>
+      <div class="card"><div class="dot grad">12</div><h3>Circles - share your energy with friends</h3><p>Invite friends with a short join code or a QR scan, then see each other's energy at a glance - opt-in, via your own iCloud. Send a friendly nudge when someone runs low; only your name and score are shared, never your health data.</p></div>
+      <div class="card"><div class="dot grad">13</div><h3>Private by design</h3><p>All health processing happens on your device. No account, no Vigor server, no analytics - your health data never leaves your iPhone; the only thing you can choose to share is your energy score, through Circles.</p></div>
     </div>
     <p class="note">Localized into 10 languages - and more to come after launch.</p>
   </div>
@@ -150,11 +152,11 @@
 <section>
   <div class="wrap">
     <h2>On your wrist</h2>
-    <p class="lede">One raise of the wrist shows the score, the day's charged and drained totals, and the same energy curve as the phone - drawn over your heart-rate and activity intensity. The watch mirrors the look you chose on the phone (or pick a different one on the wrist), complications keep the number a glance away, and the Smart Stack surfaces Vigor when it matters: mornings, after workouts, when energy runs low.</p>
+    <p class="lede">One raise of the wrist shows your score; swipe for the day's energy curve, what charged and drained you, and a morning-readiness page with its heart, sleep, and rest inputs. The watch mirrors the look you chose on the phone (or pick a different one on the wrist), complications keep the number a glance away, and the Smart Stack surfaces Vigor when it matters: mornings, after workouts, when energy runs low.</p>
     <div class="watchshots">
-      <figure><img src="assets/screenshots/watch-oled.webp" alt="Watch app in the OLED look" width="416" height="496" loading="lazy"><figcaption>OLED</figcaption></figure>
-      <figure><img src="assets/screenshots/watch-neko.webp" alt="Watch app in the Neko look" width="416" height="496" loading="lazy"><figcaption>Neko</figcaption></figure>
-      <figure><img src="assets/screenshots/watch-modern.webp" alt="Watch app in the Modern look" width="416" height="496" loading="lazy"><figcaption>Modern</figcaption></figure>
+      <figure><img src="assets/screenshots/watch-glance.webp" alt="Watch glance: the body-energy score at a glance" width="416" height="496" loading="lazy"><figcaption>Your score at a glance</figcaption></figure>
+      <figure><img src="assets/screenshots/watch-readiness.webp" alt="Watch morning-readiness page with heart, sleep and rest inputs" width="416" height="496" loading="lazy"><figcaption>Morning readiness</figcaption></figure>
+      <figure><img src="assets/screenshots/watch-drivers.webp" alt="Watch page showing what charged and drained you today" width="416" height="496" loading="lazy"><figcaption>What moved your energy</figcaption></figure>
     </div>
   </div>
 </section>
