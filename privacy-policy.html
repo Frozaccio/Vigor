@@ -79,30 +79,41 @@ the result. That is the only use.</p>
 </ul>
 
 <h2>Circles (optional friend sharing, off by default)</h2>
-<p>Circles is an optional feature that lets you share your current energy score
-with a small group of friends you invite, and see theirs. It is turned OFF by
-default: nothing in this section applies unless you deliberately turn Circles
-on in the app.</p>
+<p>Circles lets you share your current energy score with individual friends,
+one connection at a time, and see theirs. It is turned OFF by default: nothing
+in this section applies unless you deliberately turn it on in the app.</p>
 <ul>
-  <li>What is shared: only your chosen display name, an optional avatar emoji
-      if you set one, and your current energy value (0 to 100) with its zone
-      and trend and the time it was last updated. A friend can also send you a
-      short, non-medical "rest", "cheer", or "check in" nudge, which carries
-      only the sender's display name and the nudge type. Your health
-      measurements themselves (heart rate, heart rate variability, sleep,
-      workouts, and so on) NEVER leave the device.</li>
-  <li>Who can see it: only the members of a circle - friends you personally
-      invited with a private link, or whose invitation you accepted. It is
-      never public.</li>
+  <li>One to one, never a group: each friend is a separate, private connection.
+      Your friends cannot see each other, and they cannot see who else you are
+      connected to.</li>
+  <li>Both people must agree: entering someone's join code sends them a
+      request. Nothing is shared in either direction until they accept it, and
+      declining tells the other person nothing.</li>
+  <li>What is shared: your chosen display name, an optional avatar, and values
+      derived from your energy score - the score itself (0 to 100) and its
+      zone, plus, only if you allow it for that particular person, the trend
+      arrow, your week variation, your morning starting number, how much the
+      night gave back, your average morning, how many days in a row you started
+      above it, and the rough shape of your day. Your health measurements
+      themselves (heart rate, heart rate variability, sleep, workouts, and so
+      on) NEVER leave the device.</li>
+  <li>You choose per friend: you set separately, for each person, which of
+      those values they see, and you can pause a person without
+      disconnecting.</li>
+  <li>Who can see it: only that one friend. It is never public, and a shared
+      link on its own grants nobody access - only the person you accepted can
+      read what you share with them.</li>
+  <li>Nudges: a friend can send a short, non-medical "rest", "cheer", or "check
+      in" nudge, which carries only the sender's display name and the nudge
+      type. You can mute a friend's nudges on your device.</li>
   <li>How it is stored: in Apple iCloud (Apple's CloudKit service), under your
       own Apple account. The developer operates no server, never receives your
       data, and cannot read what you share.</li>
-  <li>Your controls: you can leave a circle you joined, remove a member from a
-      circle you own, and turn Circles off anytime in the app's Settings.
-      Turning it off stops further sharing, stops circle notifications on the
-      device, and deletes the sync subscriptions. To delete data you already
-      shared, manage Vigor's iCloud data in Settings, your Apple ID,
-      iCloud.</li>
+  <li>Your controls: you can remove any friend at any time, which stops sharing
+      in BOTH directions and deletes from iCloud what you shared with that
+      person. Turning Circles off in the app's Settings removes every
+      connection, deletes everything you shared from iCloud, retires your join
+      code, and stops the notifications and sync subscriptions.</li>
 </ul>
 
 <h2>No account, no tracking</h2>
@@ -134,17 +145,19 @@ never leave your device.</p>
       Settings, Privacy and Security, Health, Vigor.</li>
   <li>Deleting the Vigor app removes its on-device settings. Your Apple Health
       data is not affected by deleting Vigor.</li>
-  <li>If you opted into Circles, the shared display name and energy score live
-      in your own Apple iCloud. Turn Circles off in the app to stop sharing,
-      and delete the already-shared data by managing Vigor's iCloud data in
-      Settings, your Apple ID, iCloud.</li>
+  <li>If you opted into Circles, what you shared lives in your own Apple
+      iCloud. Removing a friend deletes what you shared with that person, and
+      turning Circles off in the app removes every connection, deletes
+      everything you shared, and retires your join code - you do not need to go
+      and clean it up by hand.</li>
 </ul>
 
 <h2>Children</h2>
 <p>Vigor is a general wellness app and is not directed at children. It reads
 health data only on your device and shares nothing with anyone unless you
-deliberately opt into Circles, which shares only your display name and energy
-score with friends you invite.</p>
+deliberately opt into Circles, which shares only your display name and values
+derived from your energy score, with individual friends who have accepted your
+request.</p>
 
 <h2>Not a medical device</h2>
 <p>Vigor is for general wellness and information only. It is not a medical device
