@@ -69,14 +69,20 @@
   .card h3{ margin:0 0 6px; font-size:18px; }
   .card p{ margin:0; color:var(--muted); font-size:15px; }
   .dot{ width:34px; height:34px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-weight:800; margin-bottom:10px; }
-  .shots{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:18px; }
+  .shots{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
   .shots figure{ margin:0; text-align:center; }
   .shots img{ width:100%; border-radius:26px; box-shadow:0 16px 40px rgba(0,0,0,.16); }
   .shots figcaption{ color:var(--muted); font-size:14px; margin-top:10px; }
-  .watchshots{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:18px; max-width:640px; }
+  .watchshots{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:640px; }
   .watchshots figure{ margin:0; text-align:center; }
   .watchshots img{ width:100%; max-width:208px; border-radius:22px; box-shadow:0 12px 30px rgba(0,0,0,.16); }
   .watchshots figcaption{ color:var(--muted); font-size:14px; margin-top:10px; }
+  /* A gallery must never end on a short row. Four shots go 4 / 2+2 / 1 and six
+     watch shots go 3+3 / 2+2+2 / 1 - every count divides at every width. */
+  @media (max-width:860px){ .shots{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:560px){ .shots{ grid-template-columns:1fr; }
+                            .watchshots{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:380px){ .watchshots{ grid-template-columns:1fr; } }
   .steps{ counter-reset:s; display:grid; gap:14px; }
   .step{ display:flex; gap:14px; align-items:flex-start; }
   .step .n{ counter-increment:s; min-width:34px; height:34px; border-radius:999px; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; }
@@ -148,8 +154,7 @@
     <div class="shots">
       <figure><img src="assets/screenshots/drivers.webp?v=1.7" alt="Itemized list of what charged and drained the score" width="640" height="1390" loading="lazy"><figcaption>What charged you, what drained you</figcaption></figure>
       <figure><img src="assets/screenshots/projection.webp?v=1.7" alt="Sleep projection screen" width="640" height="1390" loading="lazy"><figcaption>See what tonight's sleep gives back</figcaption></figure>
-      <figure><img src="assets/screenshots/history.webp?v=1.7" alt="30-day history with trend line" width="640" height="1390" loading="lazy"><figcaption>30 days of history, with a trend line</figcaption></figure>
-      <figure><img src="assets/screenshots/insights.webp?v=1.7" alt="Pattern insights computed from your history" width="640" height="1390" loading="lazy"><figcaption>Know your patterns</figcaption></figure>
+      <figure><img src="assets/screenshots/history.webp?v=1.7" alt="History with a morning-start trend and a month calendar coloured by how each day ended" width="640" height="1390" loading="lazy"><figcaption>A calendar of your days, and the trend behind them</figcaption></figure>
       <figure><img src="assets/screenshots/rhythm.webp?v=1.7" alt="Circadian clock dial showing measured sleep, deep-sleep and heart-rate markers around a 24-hour ring" width="640" height="1390" loading="lazy"><figcaption>Your own body clock, measured</figcaption></figure>
     </div>
   </div>
@@ -160,9 +165,10 @@
     <h2>On your wrist</h2>
     <p class="lede">One raise of the wrist shows your score with the day's charge and drain. Turn the crown for four more pages: the day curve, scrubbable point by point; a live page where your heart rate updates against the rate that recharges you; morning readiness with its heart, sleep and rest inputs; and tonight's wake-up target, which you dial with the crown. The watch mirrors the look you chose on the phone (or pick a different one on the wrist), complications keep the number a glance away, and the Smart Stack surfaces Vigor when it matters: mornings, after workouts, when energy runs low.</p>
     <div class="watchshots">
-      <figure><img src="assets/screenshots/watch-glance.webp?v=1.7" alt="Watch glance: the body-energy score at a glance" width="416" height="496" loading="lazy"><figcaption>Your score at a glance</figcaption></figure>
-      <figure><img src="assets/screenshots/watch-readiness.webp?v=1.7" alt="Watch morning-readiness page with heart, sleep and rest inputs" width="416" height="496" loading="lazy"><figcaption>Morning readiness</figcaption></figure>
+      <figure><img src="assets/screenshots/watch-glance.webp?v=1.7" alt="Watch glance: the body-energy score with the day's charge and drain" width="416" height="496" loading="lazy"><figcaption>Your score at a glance</figcaption></figure>
       <figure><img src="assets/screenshots/watch-drivers.webp?v=1.7" alt="Watch day page: the scrubbable energy curve above the night's sleep stages" width="416" height="496" loading="lazy"><figcaption>The day curve, on your wrist</figcaption></figure>
+      <figure><img src="assets/screenshots/watch-readiness.webp?v=1.7" alt="Watch morning-readiness page with heart, sleep and rest inputs" width="416" height="496" loading="lazy"><figcaption>Morning readiness</figcaption></figure>
+      <figure><img src="assets/screenshots/watch-tonight.webp?v=1.7" alt="Watch page for tonight's wake-up target, dialled with the crown" width="416" height="496" loading="lazy"><figcaption>Tonight's target, on the crown</figcaption></figure>
       <figure><img src="assets/screenshots/watch-neko.webp?v=1.7" alt="Watch glance in the Neko skin, with the cat above the score" width="416" height="496" loading="lazy"><figcaption>The wrist takes your skin too</figcaption></figure>
       <figure><img src="assets/screenshots/watch-oled.webp?v=1.7" alt="Watch glance in the OLED skin, true black with a bright ring" width="416" height="496" loading="lazy"><figcaption>OLED - true black on the wrist</figcaption></figure>
     </div>
