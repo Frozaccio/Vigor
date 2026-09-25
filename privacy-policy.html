@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vigor Privacy Policy</title>
-<meta name="description" content="Privacy policy for Vigor, the iPhone body-energy app. All health processing happens on your device and your health data never leaves it; the only optional sharing is your energy score with friends you invite, via your own iCloud.">
+<meta name="description" content="Privacy policy for Vigor, the body-energy app for iPhone and Android. All health processing happens on your own devices and your health data never goes to the developer or anyone else; the only optional sharing is your energy score with friends you accept, on iPhone, via your own iCloud.">
 <link rel="canonical" href="https://frozaccio.github.io/Vigor/privacy-policy.html">
 <link rel="icon" href="assets/icon.png">
 <style>
@@ -18,6 +18,7 @@
   }
   h1 { font-size: 1.7rem; }
   h2 { font-size: 1.2rem; margin-top: 2rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.4rem; }
   code { font-family: ui-monospace, Menlo, monospace; }
   .meta { color: #888; font-size: 0.9rem; }
   ul { padding-left: 1.2rem; }
@@ -26,62 +27,135 @@
 <body>
 
 <h1>Vigor Privacy Policy</h1>
-<p class="meta">Last updated: 2026-07-29. Applies to the Vigor iPhone app and its
-optional Apple Watch companion.</p>
+<p class="meta">Last updated: 2026-09-25. Applies to the Vigor iPhone app and its
+optional Apple Watch companion, and to the Vigor Android app and its optional
+Wear OS companion.</p>
 
 <h2>Summary</h2>
 <p>Vigor is built for privacy. The app reads certain health data from Apple
-Health, uses it only to compute your body-energy score on your device, and never
-transmits your health data off the device. Vigor has no user account, no server of
-its own, no analytics, no advertising, and no third-party code that sends data
-anywhere. Your health data never leaves your device; the only thing you can
-choose to share is your energy score with friends, through the optional,
-opt-in Circles feature described below, stored in your own Apple iCloud. Your
-health data stays under your control in Apple Health.</p>
+Health on iPhone, or from Health Connect on Android, uses it only to compute your
+body-energy score on your phone, and never sends your health data to the
+developer or to anyone else. Vigor has no user account, no server of its own, no
+analytics, no advertising, and no third-party code that sends data to anyone. Your
+health data never leaves your own devices - your phone and, if you use one, your
+watch. The only thing you can choose to share is your energy score with friends,
+through the optional, opt-in Circles feature on iPhone described below, stored in
+your own Apple iCloud. Your health data stays under your control in Apple Health
+or Health Connect.</p>
 
 <h2>Who we are</h2>
-<p>Vigor is published by the developer named on the App Store listing. For any
-privacy question, contact <a href="mailto:thomas.frosio@gmail.com">thomas.frosio@gmail.com</a>.</p>
+<p>Vigor is published by the developer named on its App Store and Google Play
+listings. For any privacy question, contact
+<a href="mailto:thomas.frosio@gmail.com">thomas.frosio@gmail.com</a>.</p>
 
 <h2>Health data Vigor reads</h2>
-<p>With your explicit permission, Vigor requests read-only access to the following
-Apple Health data types. It uses them solely to estimate your body-energy score
-and the insights shown in the app:</p>
+<p>With your explicit permission, Vigor requests read-only access to the health
+data types below. It uses them solely to estimate your body-energy score and the
+insights shown in the app. You can deny any of them: to compute a score Vigor
+needs at least heart rate and sleep, and every other type only refines it where
+you allow it.</p>
+
+<h3>On iPhone, from Apple Health</h3>
 <ul>
-  <li>Heart Rate Variability (SDNN)</li>
+  <li>Heart Rate Variability (SDNN, and RMSSD where your iPhone provides it)</li>
   <li>Beat-to-beat heartbeat series (RR intervals), used to refine heart rate variability</li>
-  <li>Heart Rate</li>
-  <li>Resting Heart Rate</li>
-  <li>Sleep Analysis, including sleep stages where available</li>
+  <li>Heart Rate, Resting Heart Rate, Walking Heart Rate Average, and Heart Rate
+      Recovery</li>
+  <li>Sleep Analysis, including sleep stages where available, and sleeping
+      breathing disturbances where available</li>
   <li>Workouts</li>
   <li>Active Energy Burned</li>
   <li>Wrist Temperature (sleeping)</li>
   <li>VO2 max (cardio fitness)</li>
+  <li>Respiratory Rate and Blood Oxygen</li>
+  <li>Mindful Minutes</li>
+  <li>Time in Daylight, used for the optional daylight pattern</li>
+  <li>Menstrual Flow, used only for a note on the Body page; it is never part of
+      the score, and it is never sent to your widgets or your watch</li>
   <li>Date of Birth and Biological Sex (characteristics), used to personalize the model</li>
 </ul>
-<p>Vigor requests read-only access. It does not write any data into Apple Health.</p>
+
+<h3>On Android, from Health Connect</h3>
+<ul>
+  <li>Heart rate and heart rate variability</li>
+  <li>Resting heart rate</li>
+  <li>Sleep, including sleep stages where available</li>
+  <li>Exercise (workouts)</li>
+  <li>Active calories burned</li>
+  <li>VO2 max (cardio fitness)</li>
+  <li>Oxygen saturation (blood oxygen) and respiratory rate</li>
+  <li>Skin temperature</li>
+  <li>Mindfulness sessions</li>
+  <li>Menstruation, used only for a note on the Body page; it is never part of
+      the score, and it is never sent to your widget or your watch</li>
+</ul>
+<p>Vigor also asks Health Connect for two kinds of access, where your phone
+supports them: to read data older than 30 days, so that it can learn your
+personal baseline from about two months of history; and to read in the
+background, so that the widget, the watch, and the optional notifications stay
+current when the app is closed (about once an hour). Without the background
+permission Vigor reads nothing while it is closed. Health Connect does not
+provide age or sex; you can enter them in the app, and they are stored only on
+your phone.</p>
+
+<p>On both platforms Vigor requests read-only access. It does not write any data
+into Apple Health or Health Connect.</p>
 
 <h2>How your data is used</h2>
-<p>All processing happens on your device. Vigor reads the data types above from
-Apple Health, computes your body-energy score and timeline locally, and displays
-the result. That is the only use.</p>
+<p>All processing happens on your phone. Vigor reads the data types above,
+computes your body-energy score and timeline locally, and displays the result.
+That is the only use.</p>
 <ul>
-  <li>Vigor does not transmit your raw health data off the device.</li>
+  <li>Vigor does not send your health data to the developer or to anyone else.
+      There is no Vigor server.</li>
   <li>Vigor does not sell, rent, or share your health data with anyone.</li>
   <li>Vigor does not use your health data for advertising, marketing, or data
       mining of any kind.</li>
-  <li>Vigor does not store your health data in iCloud, CloudKit, or any cloud
-      service. The only cloud storage is the optional Circles feature: if you
-      opt in, your chosen display name and your current energy score are
-      stored in your own Apple iCloud (see the Circles section below).</li>
-  <li>Vigor contains no analytics or crash-reporting SDKs and no third-party
-      code that sends data off the device.</li>
+  <li>Vigor does not store your health data in iCloud, CloudKit, Google Drive, or
+      any cloud service of its own. The only cloud storage Vigor itself uses is
+      the optional Circles feature on iPhone: if you opt in, your chosen display
+      name and values derived from your energy score are stored in your own Apple
+      iCloud (see the Circles section below). Your phone's own backup is covered
+      under "What Vigor stores on your device" below.</li>
+  <li>Vigor contains no analytics or crash-reporting SDKs, and no code that
+      sends data anywhere except to your own watch, as described below.</li>
+  <li>On Android, neither the phone app nor the watch app requests Android's
+      internet permission, so neither can open a network connection of its
+      own.</li>
 </ul>
 
-<h2>Circles (optional friend sharing, off by default)</h2>
+<h2>Your watch</h2>
+<p>The watch apps are optional.</p>
+<ul>
+  <li>On Apple Watch, the phone sends the watch your current reading and the
+      look you chose, and the watch app can also compute a reading on the
+      watch from the health data it is permitted to read there, in the same
+      way as the phone.</li>
+  <li>On Wear OS, the watch does not read Health Connect and does not compute
+      a score. The phone sends it what it needs to draw your reading, such as
+      the score and the day's curve, the charge and drain, the readiness
+      inputs, last night's sleep window, the heart-rate levels the watch
+      compares against, your day tags, your model settings, and the look you
+      chose. The watch sends back only the day tags you set on it and requests
+      to refresh.</li>
+  <li>On Wear OS this travels through Google Play services' Wearable Data Layer,
+      which only the Vigor app on your own paired phone and watch can read.
+      Google describes it this way: over Bluetooth the two devices share an
+      encrypted channel, and when Bluetooth is unavailable the data is routed
+      through Google's servers, end-to-end encrypted. The developer never
+      receives it.</li>
+  <li>Live heart rate on Wear OS: the watch's Now page can show your heart rate
+      as it is measured, using the watch's body sensors, if you allow it. The
+      sensor is read only while that page is on screen, the reading is shown
+      and not stored, and it is never sent to the phone or used in the
+      score.</li>
+</ul>
+
+<h2>Circles (optional friend sharing on iPhone, off by default)</h2>
 <p>Circles lets you share your current energy score with individual friends,
-one connection at a time, and see theirs. It is turned OFF by default: nothing
-in this section applies unless you deliberately turn it on in the app.</p>
+one connection at a time, and see theirs. It is available in the iPhone app
+only. It is turned OFF by default: nothing in this section applies unless you
+deliberately turn it on in the app.</p>
 <ul>
   <li>One to one, never a group: each friend is a separate, private connection.
       Your friends cannot see each other, and they cannot see who else you are
@@ -120,44 +194,73 @@ in this section applies unless you deliberately turn it on in the app.</p>
 <p>Vigor has no login and no user account of its own; the optional Circles
 feature uses your own Apple iCloud account, never a Vigor account. Vigor does
 not track you across apps or websites and does not link any data to your
-identity for advertising. No App Tracking Transparency prompt is shown because
-Vigor does not track.</p>
+identity for advertising. No App Tracking Transparency prompt is shown on iPhone
+because Vigor does not track.</p>
 
 <h2>Notifications</h2>
-<p>The optional morning briefing and evening outlook are local notifications,
-composed and scheduled entirely on your device. No notification content is sent
-to or through any server other than Apple's standard on-device notification
-system.</p>
+<p>The optional low-energy alert, morning briefing, and evening outlook are local
+notifications, composed and scheduled entirely on your phone. No notification
+content is sent to or through any server.</p>
 
 <h2>What Vigor stores on your device</h2>
-<p>Vigor saves only small app settings locally on your device, such as your
-chosen visual theme, your energy-model settings (sensitivity preset, sleep need,
-morning target), any day tags you add (for example alcohol, caffeine, sickness,
-or travel), whether sample-data mode is on, and the end-of-day energy value used
-to seed the next day. These settings contain no personal health records and
-never leave your device.</p>
+<p>Vigor saves on your phone your app settings (your chosen visual theme, your
+energy-model settings such as sensitivity preset, sleep need and morning target,
+and, on Android, the age and sex you entered), any day tags you add (for example
+alcohol, caffeine, sickness, or travel), whether sample-data mode is on, your
+latest reading for the widgets and the watch, and the end-of-day energy value
+used to seed the next day. It also keeps its own computed history - one summary
+per day, such as that day's morning start, high and low - so that the History
+and long-term charts open instantly. The watch apps keep the latest reading the
+phone sent. All of this lives in Vigor's private storage, which other apps cannot
+read.</p>
+<p>Device backups: if you have turned on your phone's own backup (iCloud Backup
+or a computer backup on iPhone, or Android's backup to your Google account),
+your phone includes Vigor's settings, day tags, and latest reading in that
+backup, under your own account. Google describes Android's backup as end-to-end
+encrypted with your screen lock on Android 9 and later. On both platforms Vigor
+keeps its computed day-by-day history out of backups; it is rebuilt from your
+health data instead.</p>
+
+<h2>Security</h2>
+<p>Because Vigor has no server and no account, there is no central store of user
+data that could be breached. Your data stays in Vigor's private app storage on
+your devices, which the operating system keeps separate from other apps, and in
+Apple Health or Health Connect, which the operating system protects and where you
+control each app's access. Data that travels between your phone and your watch
+goes through the platform's own encrypted channel, as described above.</p>
 
 <h2>Data retention and deletion</h2>
 <ul>
-  <li>Your health data remains in Apple Health, under your control. Vigor keeps
-      no separate copy off your device.</li>
-  <li>You can revoke Vigor's access to Health data at any time in
-      Settings, Privacy and Security, Health, Vigor.</li>
-  <li>Deleting the Vigor app removes its on-device settings. Your Apple Health
-      data is not affected by deleting Vigor.</li>
-  <li>If you opted into Circles, what you shared lives in your own Apple
-      iCloud. Removing a friend deletes what you shared with that person, and
-      turning Circles off in the app removes every connection, deletes
+  <li>Your health data remains in Apple Health or Health Connect, under your
+      control. Vigor keeps no copy of it anywhere except its own on-device
+      computations described above.</li>
+  <li>You can revoke Vigor's access at any time: on iPhone in Settings, Privacy
+      and Security, Health, Vigor; on Android in Health Connect's settings, under
+      App permissions, Vigor.</li>
+  <li>In the app's Settings, "Re-read Apple Health data" on iPhone, or
+      "Re-read Health Connect data" on Android, clears Vigor's computed history
+      and rebuilds it from your health data.</li>
+  <li>Deleting the Vigor app removes everything it stored on that device,
+      including its computed history. Your Apple Health or Health Connect data
+      is not affected by deleting Vigor.</li>
+  <li>If you opted into Circles on iPhone, what you shared lives in your own
+      Apple iCloud. Removing a friend deletes what you shared with that person,
+      and turning Circles off in the app removes every connection, deletes
       everything you shared, and retires your join code - you do not need to go
       and clean it up by hand.</li>
 </ul>
 
+<h2>Exporting your data</h2>
+<p>You can export everything Vigor computed as CSV or JSON files from Settings.
+The files are created on your phone and go only where you choose to send them,
+through the system share sheet.</p>
+
 <h2>Children</h2>
 <p>Vigor is a general wellness app and is not directed at children. It reads
-health data only on your device and shares nothing with anyone unless you
-deliberately opt into Circles, which shares only your display name and values
-derived from your energy score, with individual friends who have accepted your
-request.</p>
+health data only on your devices and shares nothing with anyone unless you
+deliberately opt into Circles on iPhone, which shares only your display name and
+values derived from your energy score, with individual friends who have accepted
+your request.</p>
 
 <h2>Not a medical device</h2>
 <p>Vigor is for general wellness and information only. It is not a medical device

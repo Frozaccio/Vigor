@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vigor Support</title>
-<meta name="description" content="Support and frequently asked questions for Vigor, the iPhone body-energy app that works with Apple Watch, Garmin, Oura, Whoop, Fitbit and any tracker that writes to Apple Health.">
+<meta name="description" content="Support and frequently asked questions for Vigor, the body-energy app for iPhone, which works with Apple Watch, Garmin, Oura, Whoop, Fitbit and any tracker that writes to Apple Health, and for Android, which reads Health Connect.">
 <link rel="canonical" href="https://frozaccio.github.io/Vigor/support.html">
 <link rel="icon" href="assets/icon.png">
 <style>
@@ -25,10 +25,19 @@
 
 <h2>Contact</h2>
 <p>Questions, bugs, or feedback: <a href="mailto:thomas.frosio@gmail.com">thomas.frosio@gmail.com</a>.
-I read every message. Please include your iPhone model and iOS version if you are
+I read every message. Please include your phone model and its iOS or Android
+version (and your watch model, if the problem is on the watch) if you are
 reporting a problem.</p>
 
 <h2>Frequently asked questions</h2>
+
+<h3>Is Vigor on Android?</h3>
+<p>The Android app and its Wear OS watch app are coming soon to Google Play. It is
+the same app as on iPhone: the same model, number for number, the same screens,
+the same eight looks, and the same ten languages. It reads Health Connect instead
+of Apple Health. It needs Android 9 or later and Health Connect, which newer
+versions of Android include and older ones get from Google Play; the watch app
+needs Wear OS 3 or later. Circles, the friend sharing, is on iPhone only.</p>
 
 <h3>Do I need an Apple Watch?</h3>
 <p>No. Vigor reads Apple Health, so any tracker that writes there works - an Apple
@@ -41,11 +50,17 @@ scores the night from its duration and your sleeping heart rate. The optional
 watch app on your wrist is the one part that is Apple Watch only. With no tracker
 at all you can turn on sample data in Settings, under Data, to see how the app
 works.</p>
+<p>On Android the same holds for Health Connect: any watch, ring or app that
+writes your heart rate and sleep there works, and heart rate variability and
+workouts make the score sharper. The optional watch app is for Wear OS.</p>
 
 <h3>Why does my score look off in the first couple of weeks?</h3>
 <p>Vigor learns your personal baseline. On first run it reads about two months of
 your Apple Health history, so it usually has a good baseline right away; if you
-are new to wearing a tracker it improves as more data accumulates.</p>
+are new to wearing a tracker it improves as more data accumulates. On Android,
+Health Connect lets an app read only the 30 days before you first gave it access,
+unless you also allow access to older data when Vigor asks; allow it, and the
+baseline starts from the same two months.</p>
 
 <h3>Is this a medical device?</h3>
 <p>No. Vigor is a general wellness and information tool. It is not intended to
@@ -54,17 +69,19 @@ non-clinical, so the score is an estimate. Always consult a qualified profession
 for health decisions.</p>
 
 <h3>Is my data private?</h3>
-<p>Yes. Your health data is read from Apple Health and used on your device to
-compute your score; your health data never leaves your device. There is no
-account, no Vigor server, no ads, and no analytics. The only thing you can
+<p>Yes. Your health data is read from Apple Health or Health Connect and used on
+your phone to compute your score; your health data never leaves your own
+devices. There is no account, no Vigor server, no ads, and no analytics, and on
+Android the app does not even ask for internet access. The only thing you can
 choose to share is your energy score with friends, through the opt-in Circles
-feature (see below), via your own iCloud. See the
+feature on iPhone (see below), via your own iCloud. See the
 <a href="privacy-policy.html">Privacy Policy</a> for details. You can turn off
-Vigor's access anytime in Settings, Privacy and Security, Health.</p>
+Vigor's access anytime: on iPhone in Settings, Privacy and Security, Health; on
+Android in Health Connect's settings, under App permissions.</p>
 
 <h3>How do Circles work?</h3>
 <p>Circles is an optional, opt-in way to share energy with friends, and it works
-one friend at a time. Each connection is separate and private: your friends
+one friend at a time. It is in the iPhone app only. Each connection is separate and private: your friends
 cannot see each other, and they cannot see who else you are connected to. Only
 your chosen display name, an optional avatar, and values derived from your
 energy score are shared - never your health data (heart rate, sleep, and so on).
@@ -90,17 +107,16 @@ time, which makes the old code stop working without affecting the friends you
 already have.</p>
 
 <h3>Is there a subscription?</h3>
-<p>No. Vigor is a one-time purchase of USD 2.99 (or your local equivalent).
-No subscription, no ads, no trackers, no in-app purchases.</p>
+<p>No. On the App Store, Vigor is a one-time purchase of USD 2.99 (or your local
+equivalent). No subscription, no ads, no trackers, no in-app purchases.</p>
 
 <h3>How do I change the look?</h3>
 <p>Open Settings inside Vigor and pick one of the eight looks: Modern, Kawaii,
 OLED, Nature, Neko, Pixel, Silk, or Formal. The picker shows live previews and a
 full-screen try-on, and every look has light and dark palettes; the app opens
 in its light look by default, and Settings &gt; Appearance can follow the system
-or force light or dark. The optional Apple
-Watch app and the widgets follow your choice, or you can pick a different look
-directly on the watch.</p>
+or force light or dark. The optional watch app and the widgets follow your
+choice, or you can pick a different look directly on the watch.</p>
 
 <h3>Can I tune how the score behaves?</h3>
 <p>Yes. In Settings, under Energy model, you can pick a sensitivity preset
@@ -118,6 +134,22 @@ wrist. It adds watch-face complications and appears in the Smart Stack when it
 is most relevant (mornings, after workouts, when energy runs low). The score is
 computed on the iPhone and synced to the watch, so keep the iPhone app
 installed.</p>
+
+<h3>What does the optional Wear OS app do?</h3>
+<p>The same five pages as on Apple Watch: your score with the day's charge and
+drain, the day curve you scrub with the crown, a live heart-rate page, morning
+readiness with its inputs, and tonight's wake-up target. Watch-face
+complications show your score, tonight's sleep, and a one-tap caffeine tag. The
+Wear OS app does not read Health Connect itself: it shows what your phone
+computed and says how old it is, and tapping the gauge asks the phone for a
+fresh one. Keep the Android phone app installed, and open it once after
+installing the watch app.</p>
+
+<h3>What is on the Android home screen?</h3>
+<p>One Vigor widget you can resize from small to large, showing your energy,
+tonight's sleep, or morning readiness - you choose when you place it, and can
+change it from its long-press menu. There is also a Quick Settings tile, and
+long-pressing the app icon offers My Energy, Sleep Tonight and Log a Day Tag.</p>
 
 <h3>Why did my score change after I tagged a day?</h3>
 <p>Day tags (alcohol, caffeine, sickness, travel) tell the model why your body
@@ -155,7 +187,7 @@ Athletes. Sports Medicine 44(Suppl 2):S139-S147.
 </ul>
 
 <h2>Independent app</h2>
-<p>Vigor is an independent app built on Apple Health and is not affiliated with,
-endorsed by, or connected to any fitness-device maker.</p>
+<p>Vigor is an independent app built on Apple Health and Health Connect and is not
+affiliated with, endorsed by, or connected to any fitness-device maker.</p>
 </body>
 </html>
