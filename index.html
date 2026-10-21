@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vigor">
 <meta property="og:title" content="Vigor - your whole day on one energy curve">
-<meta property="og:description" content="A 0 to 100 body-energy score and a full-day energy curve from any fitness tracker - Garmin, Oura, Whoop, Fitbit and more. Computed on your phone. On the App Store, pay once, USD 2.99. Android coming soon.">
+<meta property="og:description" content="A 0 to 100 body-energy score and a full-day energy curve from any fitness tracker - Garmin, Oura, Whoop, Fitbit and more. Computed on your phone. On the App Store and Google Play, pay once, USD 2.99.">
 <meta property="og:url" content="https://frozaccio.github.io/Vigor/">
 <meta property="og:image" content="https://frozaccio.github.io/Vigor/assets/og-card.jpg?v=2">
 <meta property="og:image:width" content="1200">
@@ -17,7 +17,7 @@
 <meta property="og:image:alt" content="Vigor app icon and a day of body energy drawn as one curve">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Vigor - your whole day on one energy curve">
-<meta name="twitter:description" content="A 0 to 100 body-energy score and a full-day energy curve from any fitness tracker. Computed on your phone. On the App Store, pay once, USD 2.99. Android coming soon.">
+<meta name="twitter:description" content="A 0 to 100 body-energy score and a full-day energy curve from any fitness tracker. Computed on your phone. On the App Store and Google Play, pay once, USD 2.99.">
 <meta name="twitter:image" content="https://frozaccio.github.io/Vigor/assets/og-card.jpg?v=2">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
@@ -26,9 +26,9 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Vigor",
-  "operatingSystem": "iOS",
+  "operatingSystem": "iOS, Android",
   "applicationCategory": "HealthApplication",
-  "description": "Vigor turns health data from any Apple Health tracker - Garmin, Oura, Whoop, Fitbit and more - into a 0 to 100 body-energy score and a full-day energy curve, computed entirely on the iPhone. Eight visual themes, morning readiness score, day tags, a watch app, complications, widgets, and an opt-in Circles feature to share your energy score one to one with individual friends who accept your request (over your own iCloud). One-time purchase, no subscription; health data never leaves the device.",
+  "description": "Vigor turns health data from any tracker that writes to Apple Health or Health Connect - Garmin, Oura, Whoop, Fitbit and more - into a 0 to 100 body-energy score and a full-day energy curve, computed entirely on the phone. Eight visual themes, morning readiness score, day tags, a watch app, complications, widgets, and, on iPhone, an opt-in Circles feature to share your energy score one to one with individual friends who accept your request (over your own iCloud). One-time purchase, no subscription; health data never leaves the device.",
   "url": "https://frozaccio.github.io/Vigor/",
   "image": "https://frozaccio.github.io/Vigor/assets/og-card.jpg?v=2",
   "author": { "@type": "Person", "name": "Thomas Frosio" },
@@ -57,6 +57,7 @@
   .soon{ display:inline-block; font-weight:700; font-size:14px; padding:8px 16px; border-radius:999px; border:1.5px solid var(--line); color:var(--muted); margin-left:8px; }
   .cta{ display:inline-block; color:#fff; font-weight:700; font-size:16px; padding:13px 26px; border-radius:999px; text-decoration:none; box-shadow:0 10px 26px rgba(171,54,235,.30); }
   .cta-wrap{ margin:20px 0 0; }
+  .cta-wrap .cta{ margin:6px 4px 0; }
   .soon-wrap{ margin:14px 0 0; }
   .soon-wrap .soon{ margin-left:0; }
   .hero-shot{ width:min(300px,72vw); margin:34px auto 0; display:block; border-radius:36px; box-shadow:0 24px 60px rgba(0,0,0,.22); }
@@ -104,8 +105,8 @@
     <h1>Vigor</h1>
     <p class="tagline">Your whole day on one energy curve - built from whichever tracker you wear, computed on your phone.</p>
     <span class="badge grad">Pay once - USD 2.99. No subscription.</span>
-    <p class="cta-wrap"><a class="cta grad" href="https://apps.apple.com/app/id6788975978" aria-label="Download Vigor on the App Store">Download on the App Store</a></p>
-    <p class="soon-wrap"><a class="soon" href="#android" style="text-decoration:none">Android - coming soon</a></p>
+    <p class="cta-wrap"><a class="cta grad" href="https://apps.apple.com/app/id6788975978" aria-label="Download Vigor on the App Store">Download on the App Store</a>
+      <a class="cta grad" href="https://play.google.com/store/apps/details?id=com.frozaccio.vigor" aria-label="Get Vigor on Google Play">Get it on Google Play</a></p>
     <img class="hero-shot" src="assets/screenshots/hero.webp?v=1.7" alt="Vigor day view: the full-day energy curve with activity band and event markers" width="640" height="1390">
     <p class="note">A wellness tool, not a medical device.</p>
   </div>
@@ -183,7 +184,8 @@
 <section id="android">
   <div class="wrap">
     <h2>Also on Android</h2>
-    <p class="lede">The same Vigor for Android phones, coming soon to Google Play: the same model, number for number, the same screens, the same eight looks, and the same ten languages. It reads Health Connect, so any watch, ring or app that writes your heart rate, heart rate variability, sleep and workouts there works. An optional watch app brings the five wrist pages - your score, the day curve on the crown, live heart rate, morning readiness and tonight's target - with complications for your score, tonight's sleep, and a one-tap caffeine tag. The watch shows what your phone computed and says how old it is. It needs Android 9 or later with Health Connect. Circles, the friend sharing, is on iPhone only.</p>
+    <p class="lede">The same Vigor for Android phones, on Google Play: the same model, number for number, the same screens, the same eight looks, and the same ten languages. It reads Health Connect, so any watch, ring or app that writes your heart rate, heart rate variability, sleep and workouts there works. An optional watch app brings the five wrist pages - your score, the day curve on the crown, live heart rate, morning readiness and tonight's target - with complications for your score, tonight's sleep, and a one-tap caffeine tag. The watch shows what your phone computed and says how old it is. It needs Android 9 or later with Health Connect. Circles, the friend sharing, is on iPhone only.</p>
+    <p class="cta-wrap"><a class="cta grad" href="https://play.google.com/store/apps/details?id=com.frozaccio.vigor" aria-label="Get Vigor on Google Play">Get it on Google Play</a></p>
     <div class="shots">
       <figure><img src="assets/screenshots/android-today.webp?v=1.7" alt="Vigor on an Android phone: the Modern look with the day's score and curve" width="640" height="1422" loading="lazy"><figcaption>The same day, on Android</figcaption></figure>
       <figure><img src="assets/screenshots/android-neko.webp?v=1.7" alt="Vigor on an Android phone in the Neko look, the cat above the score" width="640" height="1422" loading="lazy"><figcaption>Every look comes along</figcaption></figure>
